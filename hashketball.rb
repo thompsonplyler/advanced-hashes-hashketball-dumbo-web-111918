@@ -119,8 +119,7 @@ def num_points_scored(player_name)
   game_hash
 
   game_hash.collect do |key1, value1|
-    if value1 = :players
-      key1.collect do |key2, value2|
+    key1.collect do |key2, value2|
         value2
       end
     end
