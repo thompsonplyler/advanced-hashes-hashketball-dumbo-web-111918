@@ -122,6 +122,7 @@ def num_points_scored(player_name)
     info_1.collect do |info_2, info_3|
       info_3.collect do |players, stats|
         players
+      end
     end
   end
 
