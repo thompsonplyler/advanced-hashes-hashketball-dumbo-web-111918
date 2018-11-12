@@ -124,7 +124,7 @@ def num_points_scored(player_name)
     characteristics.collect do |key1,value1|
       if key1 == :players
         value1.collect do |player, stats|
-          if player == player_name
+          if player = player_name
             stats.collect do |stat,value|
               if stat = :points
                 value
