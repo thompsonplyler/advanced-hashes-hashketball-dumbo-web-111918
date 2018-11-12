@@ -127,6 +127,7 @@ def num_points_scored(player_name)
           if player == player_name
               if stats.keys == :points
                 stats.values
+              end
           end
         end
       end
