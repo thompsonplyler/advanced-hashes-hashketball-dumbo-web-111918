@@ -117,9 +117,6 @@ end
 
 def num_points_scored(player_name = "Brooks Lopez")
   game_hash
-  value = []
-  player_hash = {}
-  points_scored = nil
 
   game_hash.collect do |home_or_away, characteristics|
     characteristics.collect do |key1,value1|
