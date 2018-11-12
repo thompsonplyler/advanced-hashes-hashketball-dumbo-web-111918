@@ -121,6 +121,7 @@ def num_points_scored(player_name)
   game_hash.collect do |from,info_1|
     info_1.collect do |info_2, info_3|
       info_3
+    end
   end
 
 end
