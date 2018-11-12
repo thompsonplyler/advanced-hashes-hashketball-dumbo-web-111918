@@ -1,10 +1,10 @@
 def game_hash
 team_hash = {
   :home => {
-    :team_name => "brooklyn_nets",
-    :colors => ["black", "white"],
+    :team_name => "Brooklyn Nets",
+    :colors => ["Black", "White"],
     :players => {
-      :alan_anderson => {
+      "Alan Anderson" => {
           :number => 0,
           :shoe => 16,
           :points => 22,
@@ -14,7 +14,7 @@ team_hash = {
           :blocks =>1 ,
           :slam_dunks =>1
       },
-      :reggie_evans => {
+      "Reggie Evans" => {
           :number =>30 ,
           :shoe => 14,
           :points =>12 ,
@@ -24,7 +24,7 @@ team_hash = {
           :blocks => 12,
           :slam_dunks =>7
       },
-      :brook_lopez => {
+      "Brook_lopez" => {
           :number =>11 ,
           :shoe => 17,
           :points => 17,
@@ -34,7 +34,7 @@ team_hash = {
           :blocks =>1 ,
           :slam_dunks =>15
       },
-      :mason_plumlee => {
+      "Mason Plumlee" => {
           :number =>1 ,
           :shoe =>19 ,
           :points =>26 ,
@@ -44,7 +44,7 @@ team_hash = {
           :blocks =>8 ,
           :slam_dunks => 5
       },
-      :jason_terry => {
+      "Jason Terry" => {
           :number => 31,
           :shoe => 15,
           :points =>19 ,
@@ -60,7 +60,7 @@ team_hash = {
     :team_name => "Charlotte Hornets",
     :colors => ["Turquoise", "Purple"],
     :players => {
-      :jeff_adrien => {
+      "Jeff Adrien" => {
           :number => 4,
           :shoe => 18,
           :points => 10,
@@ -70,7 +70,7 @@ team_hash = {
           :blocks =>7 ,
           :slam_dunks =>2
       },
-      :bismak_biyombo => {
+      "Bismak Biyombo" => {
           :number => 0,
           :shoe => 16,
           :points => 12,
@@ -80,7 +80,7 @@ team_hash = {
           :blocks =>15 ,
           :slam_dunks => 10
       },
-      :desagna_diop => {
+      "DeSagna Diop" => {
           :number =>2 ,
           :shoe =>14 ,
           :points =>24 ,
@@ -90,7 +90,7 @@ team_hash = {
           :blocks =>5 ,
           :slam_dunks =>5
       },
-      :ben_Gordon => {
+      "Ben Gordon" => {
           :number => 8,
           :shoe => 15,
           :points =>33 ,
@@ -100,7 +100,7 @@ team_hash = {
           :blocks => 1,
           :slam_dunks =>0
       },
-      :brendan_haywood => {
+      "Brendan Haywood" => {
           :number =>33 ,
           :shoe =>15 ,
           :points =>6 ,
@@ -115,7 +115,13 @@ team_hash = {
 }
 end
 
-def num_points_scored
+def num_points_scored(player_name)
+  game_hash
+  
+  team_hash.collect do |from,info|
+    puts from
+  end
+    
 end
 
 def shoe_size
