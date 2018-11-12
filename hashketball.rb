@@ -126,7 +126,8 @@ def num_points_scored(player_name)
         value2.collect do |key3,value3|
           if value3.class == Hash
             if key3.include?(player_name)
-              player_name
+              if value3.keys.include?(points)
+                value3.values
             end
           end
         end
