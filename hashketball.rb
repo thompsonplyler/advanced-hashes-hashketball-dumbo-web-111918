@@ -124,7 +124,15 @@ def num_points_scored(player_name)
     home_or_away.collect do |key2, value2|
       if value2.class == Hash
         value2.collect do |key3,value3|
-          value3.class
+          if value3.class == Hash
+            if value3.keys = player_name
+              value3.collect do |stat,value|
+                if stat.keys = :points
+                  points_scored = value
+                end
+              end
+            end
+          end
         end
       end
     end
