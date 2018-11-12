@@ -126,7 +126,9 @@ def num_points_scored(player_name)
         value1.collect do |player, stats|
           if player == player_name
             stats.collect do |stat,value|
-              stat
+              if stat = :points
+                value
+              end
             end
           end
         end
