@@ -119,10 +119,9 @@ def num_points_scored(player_name)
   game_hash
 
   game_hash.collect do |key1, value1|
-    key1.collect do |key2, value2|
+    value1.collect do |key2, value2|
         value2
-      end
-
+    end
   end
 
 
