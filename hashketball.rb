@@ -127,13 +127,15 @@ def num_points_scored(player_name)
           if value3.class == Hash
             if key3.include?(player_name)
               if value3.keys.include?(points)
-                value3.values
+                points_scored = value3.values
             end
           end
         end
       end
     end
   end
+
+  points_scored
 
   end
     # value1.collect do |key2, value2|
