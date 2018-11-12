@@ -123,7 +123,7 @@ def num_points_scored(player_name)
       if key1 == :players
         value1.collect do |player|
           if player[:player_name] == player_name
-            return player[:points]
+            return player[:points].to_i
           end
         end
       end
