@@ -118,7 +118,7 @@ end
 def num_points_scored(player_name)
   game_hash
 
-  team_hash.collect do |from,info|
+  game_hash.collect do |from,info|
     puts from
   end
 
