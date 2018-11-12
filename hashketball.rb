@@ -128,6 +128,7 @@ def num_points_scored(player_name)
             if key3.include?(player_name)
               if value3.keys.include?(points)
                 points_scored = value3.values
+              end
             end
           end
         end
