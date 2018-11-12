@@ -121,11 +121,7 @@ def num_points_scored(player_name)
   points_scored = nil
 
   game_hash.collect do |key1, value1|
-    if value1.class == Hash
-      if value1.keys.include?("players")
-        "You found players"
-      end
-    end
+    value1
   end
 
   end
