@@ -126,3 +126,9 @@ end
 
 def team_names
 end
+
+def method_name
+end
+
+def player_numbers
+end
