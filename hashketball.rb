@@ -127,6 +127,7 @@ def num_points_scored(player_name)
           if value3.class == Hash
             if key3.keys.include?(player_name)
               player_name
+            end
           end
         end
       end
