@@ -124,6 +124,7 @@ def num_points_scored(player_name)
     characteristics.collect do |key1,value1|
       if key1.players
         "Yay"
+      end
     end
   end
 
