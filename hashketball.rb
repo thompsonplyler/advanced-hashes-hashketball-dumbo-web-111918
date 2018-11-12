@@ -122,7 +122,7 @@ def num_points_scored(player_name)
 
   game_hash.collect do |home_or_away, characteristics|
     characteristics.collect do |key1,value1|
-      if key1.include?(:players)
+      if key1 == :players
         "Yay"
       end
     end
