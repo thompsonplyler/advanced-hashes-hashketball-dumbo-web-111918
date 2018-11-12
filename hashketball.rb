@@ -128,7 +128,6 @@ def num_points_scored(player_name)
               stats.collect do |stat,value|
                 stat
               end
-            end
           end
         end
       end
