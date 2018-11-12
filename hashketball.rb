@@ -136,7 +136,7 @@ def num_points_scored(player_name)
     end
   end
 
-  
+
 
   end
     # value1.collect do |key2, value2|
