@@ -124,7 +124,7 @@ def num_points_scored(player_name)
     value << characteristics
   end
 
-  value
+  value[1]
 
 end
 
