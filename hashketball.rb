@@ -115,7 +115,7 @@ team_hash = {
 }
 end
 
-def num_points_scored(player_name = "Brooks Lopez")
+def num_points_scored(player_name)
   game_hash
 
   game_hash.collect do |home_or_away, characteristics|
