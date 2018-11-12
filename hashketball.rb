@@ -115,14 +115,14 @@ team_hash = {
 }
 end
 
-def num_points_scored(player_name)
+def num_points_scored(basketball_player)
   game_hash
 
   game_hash.collect do |home_or_away, characteristics|
     characteristics.collect do |key1,value1|
       if key1 == :players
         value1.collect do |player|
-          if player[:player_name] == player_name
+          if player[:player_name] == basketball_player
             return player[:points]
           end
         end
