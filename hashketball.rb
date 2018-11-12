@@ -138,11 +138,7 @@ def num_points_scored(player_name)
     end
   end
 
-player_hash.collect do |stats, value|
-  if stats = :points
-    value
-  end
-end
+player_hash[:score]
 
 end
 
