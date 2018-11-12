@@ -123,3 +123,6 @@ end
 
 def team_colors
 end
+
+def team_names
+end
