@@ -124,21 +124,14 @@ def num_points_scored(player_name = "Brooks Lopez")
   game_hash.collect do |home_or_away, characteristics|
     characteristics.collect do |key1,value1|
       if key1 == :players
-        value1.collect do |player, stats|
-          if player == player_name
-            player_hash = stats
-            stats.collect do |stat,value|
-              if stat = :points
-                value
-              end
-            end
+        value1.collect do |player|
+          if player[:player_name] == player_name
+            return player[:points]
           end
         end
       end
     end
   end
-
-player_hash
 
 end
 
