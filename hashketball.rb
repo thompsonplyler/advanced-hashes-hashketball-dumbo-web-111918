@@ -117,15 +117,15 @@ end
 
 def num_points_scored(player_name)
   game_hash
-  value = 0
+  value = []
   points_scored = nil
 
   game_hash.collect do |home_or_away, characteristics|
-    value = characteristics[1]
+    value << characteristics
   end
 
   value
-  "Lame"
+
 end
 
 
