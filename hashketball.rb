@@ -122,7 +122,7 @@ def num_points_scored(player_name)
   #   if hash.keys.include?(player_name)
   #     player_name
   #   end
-  end
+
 
 
 end
