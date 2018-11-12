@@ -129,6 +129,7 @@ def num_points_scored(player_name)
                 if stat = :points
                   points_scored = value
                 end
+              end
             end
           end
         end
