@@ -127,7 +127,7 @@ def num_points_scored(player_name)
         value1.collect do |player, stats|
           if player == player_name
             if stats.keys.include?("points")
-              stats.values
+              points_scored = stats.values
             end
           end
         end
@@ -135,6 +135,7 @@ def num_points_scored(player_name)
     end
   end
 
+points_scored
 end
 
 
