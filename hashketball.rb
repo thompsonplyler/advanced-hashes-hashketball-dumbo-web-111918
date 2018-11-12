@@ -118,7 +118,7 @@ end
 def num_points_scored(basketball_player)
   game_hash
 
-  game_hash.fetch[:player]
+  game_hash.fetch[(:player)
 
 end
 
