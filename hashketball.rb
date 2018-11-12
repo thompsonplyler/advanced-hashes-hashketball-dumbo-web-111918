@@ -124,7 +124,7 @@ def num_points_scored(player_name)
     value1.collect do |key2, value2|
         if value2.class == Hash
           value2.collect do |key3, value3|
-            if key3 = "player_name"
+            if key3 = player_name.to_s
               value3.collect do |stat, value|
                 if stat = :points
                   points_scored = value
