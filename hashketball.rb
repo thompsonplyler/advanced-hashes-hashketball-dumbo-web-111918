@@ -121,7 +121,7 @@ def num_points_scored(player_name)
   points_scored = nil
 
   game_hash.collect do |key1, value1|
-    key1.class
+    value1.class
   end
 
   end
