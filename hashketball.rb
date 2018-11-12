@@ -118,8 +118,8 @@ end
 def num_points_scored(player_name)
   game_hash
 
-  game_hash.collect.keys do |keys|
-    keys
+  game_hash.collect do |hash|
+    hash
   end
 
 
