@@ -126,6 +126,7 @@ def num_points_scored(player_name)
         "Players found"
         value1.collect do |player, stats|
           player
+        end
       end
     end
   end
