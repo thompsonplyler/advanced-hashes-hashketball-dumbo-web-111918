@@ -118,6 +118,9 @@ end
 def num_points_scored(player_name)
   game_hash
 
+  game_hash.collect do |key1, value1|
+    key1
+  end
   # game_hash.collect do |hash|
   #   if hash.keys.include?(player_name)
   #     player_name
