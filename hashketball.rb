@@ -120,23 +120,11 @@ def num_points_scored(player_name)
 
   points_scored = nil
 
-  game_hash.collect do |key1, home_or_away|
-    home_or_away.collect do |key2, value2|
-      if value2.class == Hash
-        value2.collect do |key3,value3|
-          if value3.class == Hash
-            if key3.include?(player_name)
-              if value3.keys.include?("points")
-                points_scored = value3
-              end
-            end
-          end
-        end
-      end
-    end
+  game_hash.class
   end
 
-points_scored
+
+
 
   end
     # value1.collect do |key2, value2|
@@ -151,6 +139,21 @@ points_scored
     #         end
     #       end
     #     end
+    # end
+
+    #   home_or_away.collect do |key2, value2|
+    #     if value2.class == Hash
+    #       value2.collect do |key3,value3|
+    #         if value3.class == Hash
+    #           if key3.include?(player_name)
+    #             if value3.keys.include?("points")
+    #               points_scored = value3
+    #             end
+    #           end
+    #         end
+    #       end
+    #     end
+    #   end
     # end
 
 def shoe_size
