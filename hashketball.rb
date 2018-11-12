@@ -123,7 +123,7 @@ def num_points_scored(player_name)
   game_hash.collect do |key1, home_or_away|
     home_or_away.collect do |key2, value2|
       if value2.class == Hash
-        value2.each do |key3,value3|
+        value2.collect do |key3,value3|
           if value3.class == Hash
             if key3.include?(player_name)
               if value3.keys.include?("points")
