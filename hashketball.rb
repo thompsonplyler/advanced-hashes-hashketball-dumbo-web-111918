@@ -115,7 +115,7 @@ team_hash = {
 }
 end
 
-def num_points_scored("Brooks Lopez")
+def num_points_scored(player_name = "Brooks Lopez")
   game_hash
   value = []
   player_hash = {}
