@@ -121,20 +121,24 @@ def num_points_scored(player_name)
   points_scored = nil
 
   game_hash.collect do |key1, value1|
-    value1.collect do |key2, value2|
-        if value2.class == Hash
-          value2.collect do |key3, value3|
-            if key3 = player_name.to_s
-              value3.collect do |stat, value|
-                if stat = :points
-                  points_scored = value
-                end
-              end
-            end
-          end
-        end
-    end
+    key1.class
   end
+
+  end
+    # value1.collect do |key2, value2|
+    #     if value2.class == Hash
+    #       value2.collect do |key3, value3|
+    #         if key3 = player_name.to_s
+    #           value3.collect do |stat, value|
+    #             if stat = :points
+    #               points_scored = value
+    #             end
+    #           end
+    #         end
+    #       end
+    #     end
+    # end
+  
 
 points_scored
 end
