@@ -120,3 +120,6 @@ end
 
 def shoe_size
 end
+
+def team_colors
+end
