@@ -125,9 +125,9 @@ def num_points_scored(player_name)
       if value2.class == Hash
         value2.collect do |key3,value3|
           if value3.class == Hash
-            if value3.keys == player_name
-              player_name
-            end
+            value3
+
+
           end
         end
       end
