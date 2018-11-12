@@ -137,7 +137,11 @@ def num_points_scored(player_name)
       end
     end
   end
-player_hash
+
+player_hash.collect do |stats, value|
+  stats
+end
+
 end
 
 
