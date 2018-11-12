@@ -124,6 +124,7 @@ def num_points_scored(player_name)
           value2.collect do |key3, value3|
             if key3 == "player_name"
               player_name
+            end
           end
         end
     end
